@@ -52,7 +52,7 @@ const globalRoutingFunction = async (req, res) => {
     method: method,
     statusCode: response.status,
     userId: userId,
-    userAgent: req.headers.userAgent,
+    userAgent: req.headers["user-agent"],
     result: response.data,
     success: response.success,
     headers: req.headers,
