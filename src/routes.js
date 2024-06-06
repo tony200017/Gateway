@@ -55,6 +55,27 @@ const routes = [
     isAuthenticated: true,
     microservice: "Video Provider",
   },
+  {
+    api: "/payments/initiate",
+    methods: ["post"],
+    url: "http://localhost:3003/payments/initiate",
+    isAuthenticated: true,
+    microservice: "payment gateway",
+  },
+  {
+    api: "/payments/execute",
+    methods: ["post"],
+    url: "http://localhost:3003/payments/execute",
+    isAuthenticated: true,
+    microservice: "payment gateway",
+  },
+  {
+    api: "/payments/paymentstatus",
+    methods: ["post"],
+    url: "http://localhost:3003/payments/paymentstatus",
+    isAuthenticated: true,
+    microservice: "payment gateway",
+  },
 ];
 
 module.exports = routes;
